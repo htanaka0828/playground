@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<META http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<script src='https://raw.githubusercontent.com/watilde/beeplay/master/dist/beeplay.min.js'></script>
+<title>Ç†Ç¡ÇΩÇ©Ç¢ÇÒÇæÇ©ÇÁÅ`</title>
+</head>
+<body>
+<div align="center">
+<button id='play'>play!!</button>
+</div>
+<script>
+var playSong = function() {
+var param = {
+  sampleRate: 44100,
+  bpm: 108,
+  volume: 1.0,
+  key: 'c',
+  time: '4/4'
+};
+
+var melody = beeplay(param);
+var base = beeplay(param);
+
+param.volume = 0.1;
+var band = beeplay(param);
+
+melody.play(['B5', 'D6', 'G6'], 1.5)
+.play('C6', 0.5)
+.play('C6', 0.5)
+.play('B5', 0.5)
+.play('C6', 0.5)
+.play('D6', 0.5)
+.play('E6', 1.5)
+.play('G5', 0.5)
+.play('G5', 1)
+.play('G5', 1)
+.play('G#5', 1)
+.play('E6', 0.5)
+.play('D6', 1)
+.play('C6', 1)
+.play('D6', 0.5)
+.play('E6', 1.5)
+.play('A5', 0.5)
+.play('A5', 2)
+.play('E6', 1)
+.play('G6', 0.5)
+.play('A6', 1)
+.play('G6', 0.5)
+.play('E6', 0.5)
+.play('D6', 0.5)
+.play('C6', 1.5)
+.play('C6', 0.5)
+.play('C6', 0.5)
+.play('B5', 0.5)
+.play('A5', 0.5)
+.play('G5', 0.5)
+.play('G5', 1)
+.play('D6', 0.5)
+.play('C6', 1)
+.play('C6', 0.5)
+.play('D6', 0.5)
+.play('E6', 0.5)
+.play('F6', 1)
+.play('E6', 1)
+.play('D6', 1)
+.play('C6', 0.5)
+.play('E6', 1)
+.play('D6', 0.5)
+.play('D6', 0.5)
+.play('C6', 0.5)
+.play('C6', 0.5)
+.play('B5', 0.5)
+.play('C6', 0.5)
+.play('D6', 0.5);
+
+var code = {};
+code.C = ['C4', 'E4', 'G4'];
+code.C7 = ['C4', 'E4', 'G4', 'A#4'];
+code.Dm = ['D4', 'F4', 'A4'];
+code.E7 = ['E4', 'G#4', 'B4', 'D5'];
+code.Em = ['E4', 'G4', 'B4'];
+code.F = ['F4', 'A4', 'C5'];
+code.G = ['G4', 'B4', 'D5'];
+code.Gsus4 = ['G4', 'C5', 'D5'];
+code.Am = ['A3', 'C4', 'E4'];
+
+band.play(code.G, 1)
+.play(code.G, 0.5)
+.play(code.G, 1)
+.play(code.G, 1)
+.play(code.G, 0.5)
+.play(code.C, 1)
+.play(code.C, 0.5)
+.play(code.C, 1)
+.play(code.C, 1)
+.play(code.C, 0.5)
+.play(code.E7, 1)
+.play(code.E7, 0.5)
+.play(code.E7, 1)
+.play(code.E7, 1)
+.play(code.E7, 0.5)
+.play(code.Am, 1)
+.play(code.Am, 0.5)
+.play(code.Am, 1)
+.play(code.Am, 1)
+.play(code.Am, 0.5)
+.play(code.C7, 1)
+.play(code.C7, 0.5)
+.play(code.C7, 1)
+.play(code.C7, 1)
+.play(code.C7, 0.5)
+.play(code.F, 1)
+.play(code.F, 0.5)
+.play(code.F, 1)
+.play(code.F, 1)
+.play(code.F, 0.5)
+.play(code.Em, 1)
+.play(code.Em, 0.5)
+.play(code.Am, 1)
+.play(code.Am, 1)
+.play(code.Am, 0.5)
+.play(code.Dm, 1)
+.play(code.Dm, 0.5)
+.play(code.Dm, 1)
+.play(code.Dm, 1)
+.play(code.Dm, 0.5)
+.play(code.Gsus4, 1)
+.play(code.Gsus4, 0.5)
+.play(code.Gsus4, 1)
+.play(code.Gsus4, 1)
+.play(code.Gsus4, 0.5);
+
+base.play('G2', 1.5)
+.play('G2', 1.5)
+.play('G2', 1)
+.play('C3', 1.5)
+.play('C3', 1.5)
+.play('C3', 1)
+.play('G#2', 1.5)
+.play('G#2', 1.5)
+.play('G#2', 1)
+.play('A2', 1.5)
+.play('A2', 1.5)
+.play('A2', 1)
+.play('A#2', 1.5)
+.play('A#2', 1.5)
+.play('A#2', 1)
+.play('F2', 1.5)
+.play('F2', 1.5)
+.play('F2', 1)
+.play('E2', 1.5)
+.play('A2', 1.5)
+.play('A2', 1)
+.play('D3', 1.5)
+.play('D3', 1.5)
+.play('D3', 1)
+.play('G2', 1.5)
+.play('G2', 1)
+.play('G2', 0.5)
+.play('G3', 1);
+};
+document.getElementById('play').addEventListener('click', playSong, false);
+</script>
+</body>
+</html>
